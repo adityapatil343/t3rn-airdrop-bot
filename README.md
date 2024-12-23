@@ -96,7 +96,7 @@ for multi accounts:
    4. Arbitrum -> BASE Sepolia
    5. Run all transactions repeatedly.
 
-3. The script will process the transaction and display the results in the terminal, including:
+## 3. The script will process the transaction and display the results in the terminal, including:
 
    * Return address
    * Gases used

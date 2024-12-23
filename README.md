@@ -44,10 +44,8 @@ example:
 
      nano keys_and_addresses.py
 
-### exit using command:  control + x and then enter
 
-
-### Example format:
+### edit file Example format:
 
 for 1 account:
 
@@ -81,6 +79,8 @@ for multi accounts:
     "Account 1",
     "Account 2"
         ]
+
+### exit using command:  control + x and then enter
 
 
 ## Usage

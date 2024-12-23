@@ -31,12 +31,15 @@ Before running the script, make sure you have installed and configured:
 
           git clone https://github.com/adityapatil343/t3rn-airdrop-bot 
           cd t3rn-airdrop-bot
+2. Install python3:
 
-2. Install dependencies:
+          sudo apt update && sudo apt install -y python3
+
+3. Install dependencies:
 
         pip install web3 eth_account
 
-3. File configuration:
+4. File configuration:
      _Enter the private key and address into keys_and_addresses.py.
 
 ### for file edit use nano 
@@ -86,10 +89,6 @@ for multi accounts:
 ## Usage
 
 ## 1. Run the script with the command:
-
-     python t3rn-bot.py
-
-or
 
      python3 t3rn-bot.py
 

@@ -1,10 +1,11 @@
 # keys_and_addresses.py
+# replace you key and address
  private_keys = [
- '138d7224a76d23.....'
+ '138d72d23...'
  ]
 
  my_addresses = [
-'0x03837A9fC......'
+'0x0383AC...'
  ]
 
  labels = [

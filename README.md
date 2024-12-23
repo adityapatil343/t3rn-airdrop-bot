@@ -105,7 +105,6 @@ for multi accounts:
    * Link to blockchain explorer
 
 ## Security Notes
-  * never share your private key.
   * Make sure the configuration file is only accessed by you.
 
 

@@ -87,7 +87,11 @@ for multi accounts:
 
 ## 1. Run the script with the command:
 
-        python t3rn-bot.py
+     python t3rn-bot.py
+
+or
+
+     python3 t3rn-bot.py
 
 ## 2. Select one of the options in the menu:
    1. OP -> BASE Sepolia

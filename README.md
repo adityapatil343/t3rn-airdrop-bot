@@ -44,7 +44,8 @@ example:
 
      nano keys_and_addresses.py
 
-### exit using command: control + x and then enter
+### exit using command:  control + x and then enter
+
 
 ### Example format:
 

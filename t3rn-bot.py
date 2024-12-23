@@ -151,7 +151,7 @@ def display_menu():
     print(f"{chain_symbols['Base Sepolia']}2. BASE -> OP Sepolia{reset_color}")
     print(f"{chain_symbols['Arbitrum Sepolia']}3. BASE -> Arbitrum Sepolia{reset_color}")
     print(f"{chain_symbols['Arbitrum Sepolia']}4. Arbitrum -> BASE Sepolia{reset_color}")
-    print(f"{menu_color}5. Jalankan Semua Secara Terus-Menerus{reset_color}")
+    print(f"{menu_color}5. Run all transactions repeatedly..recommended.. {reset_color}")
     print("")
     choice = input("choose (1-5): ")
     return choice

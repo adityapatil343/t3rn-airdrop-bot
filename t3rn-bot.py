@@ -153,7 +153,7 @@ def display_menu():
     print(f"{chain_symbols['Arbitrum Sepolia']}4. Arbitrum -> BASE Sepolia{reset_color}")
     print(f"{menu_color}5. Jalankan Semua Secara Terus-Menerus{reset_color}")
     print("")
-    choice = input("Masukkan pilihan (1-5): ")
+    choice = input("choose (1-5): ")
     return choice
 
 def main():
@@ -175,52 +175,52 @@ def main():
                 print(f"{menu_color}Jalankan transaksi OP -> BASE Sepolia secara terus-menerus...{reset_color}")
                 while True:
                     successful_txs = process_network_transactions('OP Sepolia', ["OP - BASE"], networks['OP Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (OP -> BASE)...")
+                    print("Wait 10 Second for Safety (OP -> BASE)...")
                     time.sleep(10)
 
             elif choice == '2':
                 print(f"{menu_color}Jalankan transaksi BASE -> OP Sepolia secara terus-menerus...{reset_color}")
                 while True:
                     successful_txs = process_network_transactions('Base Sepolia', ["BASE - OP"], networks['Base Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (BASE -> OP)...")
+                    print("Wait 10 Second for Safety (BASE -> OP)...")
                     time.sleep(10)
 
             elif choice == '3':
                 print(f"{menu_color}Jalankan transaksi BASE -> Arbitrum Sepolia secara terus-menerus...{reset_color}")
                 while True:
                     successful_txs = process_network_transactions('Base Sepolia', ["BASE - Arbitrum"], networks['Base Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (BASE -> Arbitrum)...")
+                    print("Wait 10 Second for Safety (BASE -> Arbitrum)...")
                     time.sleep(10)
 
             elif choice == '4':
                 print(f"{menu_color}Jalankan transaksi Arbitrum -> BASE Sepolia secara terus-menerus...{reset_color}")
                 while True:
                     successful_txs = process_network_transactions('Arbitrum Sepolia', ["Arbitrum - BASE"], networks['Arbitrum Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (Arbitrum -> BASE)...")
+                    print("Wait 10 Second for Safety (Arbitrum -> BASE)...")
                     time.sleep(10)
 
             elif choice == '5':
                 print(f"{menu_color}Jalankan transaksi secara terus-menerus dari OP -> BASE, BASE -> OP, BASE -> Arbitrum, Arbitrum -> BASE{reset_color}")
                 while True:
                     successful_txs = process_network_transactions('OP Sepolia', ["OP - BASE"], networks['OP Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (OP -> BASE)...")
+                    print("Wait 10 Second for Safety (OP -> BASE)...")
                     time.sleep(10)
 
                     successful_txs = process_network_transactions('Base Sepolia', ["BASE - OP"], networks['Base Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (BASE -> OP)...")
+                    print("Wait 10 Second for Safety (BASE -> OP)...")
                     time.sleep(10)
 
                     successful_txs = process_network_transactions('Base Sepolia', ["BASE - Arbitrum"], networks['Base Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (BASE -> Arbitrum)...")
+                    print("Wait 10 Second for Safety (BASE -> Arbitrum)...")
                     time.sleep(10)
 
                     successful_txs = process_network_transactions('Arbitrum Sepolia', ["Arbitrum - BASE"], networks['Arbitrum Sepolia'], successful_txs)
-                    print("Menunggu 10 detik sebelum mencoba lagi (Arbitrum -> BASE)...")
+                    print("Wait 10 Second for Safety (Arbitrum -> BASE)...")
                     time.sleep(10)
 
         except Exception as e:
             print(f"Terjadi kesalahan: {e}")
-            print("Menunggu 10 detik sebelum mencoba lagi...")
+            print("Wait 10 Second for Safety...")
             time.sleep(10)
 
 if __name__ == "__main__":

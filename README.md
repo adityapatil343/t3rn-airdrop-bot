@@ -14,33 +14,39 @@ Now supports both Base Sepolia, Optimism Sepolia and Arbitrum Sepolia testnets.
 
 ## Requirements
 
-- Node.js (v14 or later)
-- NPM (v6 or later)
-- Contains the private key, address, and account label (stored in keys_and_addresses.py).
+Before running the script, make sure you have installed and configured:
+
+1. Python (Version 3.7 or later)
+2. Python Dependencies :
+      * web3
+      * eth_account
+3.Configuration File :
+      * data_bridge.py: Contains data for each bridge.
+      * keys_and_addresses.py: Contains the private key, address, and account label. 
 
 
 ## Installation
 
-- 1. Clone this repository:
-     
-        git clone https://github.com/adityapatil343/t3rn-airdrop-bot
-        cd t3rn-airdrop-bot
+1. Clone this repository:     
 
-- 2. Install dependencies:
+          git clone https://github.com/adityapatil343/t3rn-airdrop-bot 
+          cd t3rn-airdrop-bot
+
+3. Install dependencies:
 
         pip install web3 eth_account
 
-- 3. File configuration:
+4. File configuration:
      _Enter the private key and address into keys_and_addresses.py.
 
 
 ## Usage
 
-- 1. Run the script with the command:
+1. Run the script with the command:
 
         python t3rn-bot.py
 
-- 2. Select one of the options in the menu:
+2. Select one of the options in the menu:
 
    1. OP -> BASE Sepolia
    2. BASE -> OP Sepolia
@@ -48,7 +54,7 @@ Now supports both Base Sepolia, Optimism Sepolia and Arbitrum Sepolia testnets.
    4. Arbitrum -> BASE Sepolia
    5. Run all transactions repeatedly.
 
-- 3. The script will process the transaction and display the results in the terminal, including:
+3. The script will process the transaction and display the results in the terminal, including:
 
    * Return address
    * Gases used

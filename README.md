@@ -32,39 +32,39 @@ Before running the script, make sure you have installed and configured:
           git clone https://github.com/adityapatil343/t3rn-airdrop-bot 
           cd t3rn-airdrop-bot
 
-3. Install dependencies:
+2. Install dependencies:
 
         pip install web3 eth_account
 
-4. File configuration:
+3. File configuration:
      _Enter the private key and address into keys_and_addresses.py.
 
+### for file edit use nano 
+example:
 
-## Usage
+     nano keys_and_addresses.py
 
-1. Run the script with the command:
-
-        python t3rn-bot.py
-
-2. Select one of the options in the menu:
-
-   1. OP -> BASE Sepolia
-   2. BASE -> OP Sepolia
-   3. BASE -> Arbitrum Sepolia
-   4. Arbitrum -> BASE Sepolia
-   5. Run all transactions repeatedly.
-
-3. The script will process the transaction and display the results in the terminal, including:
-
-   * Return address
-   * Gases used
-   * Block number
-   * ETH and BRN balance
-   * Link to blockchain explorer
-
-## keys_and_addresses.py
+exit using command: control + x and then enter
 
 ### Example format:
+
+for 1 account:
+
+     private_keys = [
+     '138d7224a76d23.....'
+     ]
+
+     my_addresses = [
+    '0x03837A9fC......'
+     ]
+
+     labels = [
+    'wallet1'
+     ]
+
+
+
+for multi accounts:
 
         private_keys = [
     "0xYourPrivateKey1",
@@ -80,6 +80,28 @@ Before running the script, make sure you have installed and configured:
     "Account 1",
     "Account 2"
         ]
+
+
+## Usage
+
+## 1. Run the script with the command:
+
+        python t3rn-bot.py
+
+## 2. Select one of the options in the menu:
+   1. OP -> BASE Sepolia
+   2. BASE -> OP Sepolia
+   3. BASE -> Arbitrum Sepolia
+   4. Arbitrum -> BASE Sepolia
+   5. Run all transactions repeatedly.
+
+3. The script will process the transaction and display the results in the terminal, including:
+
+   * Return address
+   * Gases used
+   * Block number
+   * ETH and BRN balance
+   * Link to blockchain explorer
 
 ## Security Notes
   * never share your private key.

@@ -63,7 +63,7 @@ for 1 account:
 
      my_addresses = [
     'your_address_here'  # Example: '0x087....E85' 
-]
+     ]
 
      labels = [
     'wallet1' 
